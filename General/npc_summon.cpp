@@ -1,4 +1,4 @@
-#include "ScriptPCH.h"
+
 
 class summon_all_npc : public CreatureScript
 {
@@ -7,7 +7,7 @@ public:
 
     bool OnGossipHello(Player* pPlayer, Creature* pCreature)
     {
-        if (pPlayer->isInCombat())
+        if (pPlayer->IsInCombat())
         {
             pPlayer->GetSession()->SendNotification("You are in combat");
             return false;

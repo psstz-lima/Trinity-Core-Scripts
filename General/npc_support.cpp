@@ -1,5 +1,4 @@
-#include "ScriptPCH.h"
-#include <cstring>
+
 
 class npc_support : public CreatureScript
 {
@@ -35,68 +34,63 @@ class npc_support : public CreatureScript
             {
 		    
 			case GOSSIP_ACTION_INFO_DEF+1:
-					creature->MonsterWhisper("Wenn es sich um eine Klassenquest handelt bitte folgendes machen", player->GetGUID());
-					creature->MonsterWhisper("Den Fehler unter bugtracker.privat-wow-server.de eintragen und ein Ticket eröffnen.", player->GetGUID());
+					creature->Whisper("Support Message Here...", LANG_UNIVERSAL, player, false);
 	                player->CLOSE_GOSSIP_MENU();
 	           break;
 			case GOSSIP_ACTION_INFO_DEF+2:
-					creature->MonsterWhisper("Wenn es sich um eine Nordend Rufquest handelt bitte folgendes machen", player->GetGUID());
-					creature->MonsterWhisper("Den Fehler unter bugtracker.privat-wow-server.de eintragen und ein Ticket eröffnen. Bitte genau schreiben z.B Söhne Hodir etc. ", player->GetGUID());
+				creature->Whisper("Support Message Here...", LANG_UNIVERSAL, player, false);
 	                player->CLOSE_GOSSIP_MENU();
 	           break;
 			case GOSSIP_ACTION_INFO_DEF+3:
-					creature->MonsterWhisper("Wenn es sich um eine Normale Quest handelt bitte folgendes machen", player->GetGUID());
-					creature->MonsterWhisper("Den Fehler unter bugtracker.privat-wow-server.de eintragen und auf den fixx der Quest warten. Bitte eine diese Quest auslassen und eine neue beginnen. Bitte kein Ticket eröffnen.", player->GetGUID());
+				creature->Whisper("Support Message Here...", LANG_UNIVERSAL, player, false);
 	                player->CLOSE_GOSSIP_MENU();
 	           break;
 			case GOSSIP_ACTION_INFO_DEF+4:
-					creature->MonsterWhisper("Wenn du nach einem Fraktionswechsel Probleme hast bitte folgendes machen", player->GetGUID());
-					creature->MonsterWhisper("Den Fehler unter bugtracker.privat-wow-server.de eintragen und ein Ticket eröffnen.", player->GetGUID());
+				creature->Whisper("Support Message Here...", LANG_UNIVERSAL, player, false);
 	                player->CLOSE_GOSSIP_MENU();
 	           break;
 			case GOSSIP_ACTION_INFO_DEF+5:
-					creature->MonsterWhisper("Wenn du den SucheNachGruppe Channel nicht mehr siehst bitte folgendes machen", player->GetGUID());
-					creature->MonsterWhisper("Im Sagen Chat folgendes eingeben /join suchenachgruppe  und den Cache Ordner deines Wow löschen ( WoW muss geschlossen sein ) sollte dies nicht funktionieren bitte ein Ticket eröffnen", player->GetGUID());
+				creature->Whisper("Support Message Here...", LANG_UNIVERSAL, player, false);
 	                player->CLOSE_GOSSIP_MENU();
 	           break;
 			case GOSSIP_ACTION_INFO_DEF+6:
-					creature->MonsterWhisper("Bitte besuche diese Homepage spenden.privat-wow-server.de erst wenn du alles dort gelesen hast und dir nicht geholfen werden konnte besuche uns im Teamspeak im SpendenSupport von 16:00 -20:00 Kein TICKET erstellen GameMaster können dir bei Spenden Support nicht helfen.", player->GetGUID());
+				creature->Whisper("Support Message Here...", LANG_UNIVERSAL, player, false);
 	                player->CLOSE_GOSSIP_MENU();
 	           break;
 			case GOSSIP_ACTION_INFO_DEF+7:
-					creature->MonsterWhisper("Bitte besuche diese Homepage spenden.privat-wow-server.de erst wenn du alles dort gelesen hast und dir nicht geholfen werden konnte besuche uns im Teamspeak im SpendenSupport von 16:00 -20:00 Kein TICKET erstellen GameMaster können dir bei Spenden Support nicht helfen.", player->GetGUID());
+				creature->Whisper("Support Message Here...", LANG_UNIVERSAL, player, false);
 	                player->CLOSE_GOSSIP_MENU();
 	           break;
 			case GOSSIP_ACTION_INFO_DEF+8:
-					creature->MonsterWhisper("Arena Punkte werden Sonntag und Mittwoch um 21:00 verteilt solltest du keine ArenaPunkte bekommen haben bitte bis zum nächsten Zeitpunkt abwarten. Bitte Kein Ticket eröffnen GameMaster können dir da nicht weiterhelfen", player->GetGUID());
+				creature->Whisper("Support Message Here...", LANG_UNIVERSAL, player, false);
 	                player->CLOSE_GOSSIP_MENU();
 	           break;
 			case GOSSIP_ACTION_INFO_DEF+9:
-					creature->MonsterWhisper("Wartungsarbeiten sind jeden Mittwoch um 09:00 Es kann aber auch vorkommen das es an anderen Tagen passiert.", player->GetGUID());
+				creature->Whisper("Support Message Here...", LANG_UNIVERSAL, player, false);
 	                player->CLOSE_GOSSIP_MENU();
 	           break;
 			case GOSSIP_ACTION_INFO_DEF+10:
-					creature->MonsterWhisper("Unsere Supportzeiten sind von 10:00 - 22:00 am Wochenende bei Bedarf", player->GetGUID());
+				creature->Whisper("Support Message Here...", LANG_UNIVERSAL, player, false);
 	                player->CLOSE_GOSSIP_MENU();
 	           break;
 			case GOSSIP_ACTION_INFO_DEF+11:
-					creature->MonsterWhisper("Bitte lese dir unsere Serverregeln durch dort steht alles was du wissen must. Bitte kein Ticket eröffnen ein GameMaster kann dir da nicht weiterhelfen.", player->GetGUID());
+				creature->Whisper("Support Message Here...", LANG_UNIVERSAL, player, false);
 	                player->CLOSE_GOSSIP_MENU();
 	           break;
 			case GOSSIP_ACTION_INFO_DEF+12:
-					creature->MonsterWhisper("Bitte eröffne ein Ticket mit deinem genauen Fehler. Welche Quest wieso weshalb warum", player->GetGUID());
+				creature->Whisper("Support Message Here...", LANG_UNIVERSAL, player, false);
 	                player->CLOSE_GOSSIP_MENU();
 	           break;
+			   creature->Whisper("Support Message Here...", LANG_UNIVERSAL, player, false);
 			case GOSSIP_ACTION_INFO_DEF+13:
-					creature->MonsterWhisper("Wenn dich ein Spieler beleidigt hat setze Ihn auf die Ignorier Liste. Sollte der Spieler nicht aufhören dich zu beleidigen mache einen Screenshot davon und eröffne ein Ticket", player->GetGUID());
 	                player->CLOSE_GOSSIP_MENU();
 	           break;
 			case GOSSIP_ACTION_INFO_DEF+14:
-					creature->MonsterWhisper("GameMaster haben in Instanzen nicht zu suchen somit bitte kein Ticket eröffnen. Bitte schreibe dein Problem detailiert in den Bugtracker. bugtracker.privat-wow-server.de", player->GetGUID());
+				creature->Whisper("Support Message Here...", LANG_UNIVERSAL, player, false);
 	                player->CLOSE_GOSSIP_MENU();
 	           break;
 			case GOSSIP_ACTION_INFO_DEF+15:
-					creature->MonsterWhisper("Wenn du eine Frage hast die dir sonst nicht beantwortet werden kann, dann eröffne doch bitte ein Ticket.", player->GetGUID());
+				creature->Whisper("Support Message Here...", LANG_UNIVERSAL, player, false);
 	                player->CLOSE_GOSSIP_MENU();
 	           break;
 			}

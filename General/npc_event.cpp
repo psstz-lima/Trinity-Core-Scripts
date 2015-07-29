@@ -1,4 +1,4 @@
-#include "ScriptPCH.h"
+
 
 class npc_event : public CreatureScript
 {
@@ -106,33 +106,28 @@ class npc_event : public CreatureScript
 			{
 				case 0:
 					{
-						Player->vendorLoader = 2500026;
-						m_session->SendListCustomInventory(Creature->GetGUID(),2500026);
+						m_session->SendListInventory(Creature->GetGUID(), 2500004);
 						Player->PlayerTalkClass->SendCloseGossip();
 					}
 					return true;
 					break;
 				case 1:
 					{
-
-						Player->vendorLoader = 2500027;
-						m_session->SendListCustomInventory(Creature->GetGUID(),2500027);
+						m_session->SendListInventory(Creature->GetGUID(), 2500004);
 						Player->PlayerTalkClass->SendCloseGossip();
 					}
 					return true;
 					break;
 				case 2:
 					{
-						Player->vendorLoader = 2500028;
-						m_session->SendListCustomInventory(Creature->GetGUID(),2500028);
+						m_session->SendListInventory(Creature->GetGUID(), 2500004);
 						Player->PlayerTalkClass->SendCloseGossip();
 					}
 					return true;
 					break;
 				case 3:
 					{
-						Player->vendorLoader = 2500029;
-						m_session->SendListCustomInventory(Creature->GetGUID(),2500029);
+						m_session->SendListInventory(Creature->GetGUID(), 2500004);
 						Player->PlayerTalkClass->SendCloseGossip();
 					}
 					return true;

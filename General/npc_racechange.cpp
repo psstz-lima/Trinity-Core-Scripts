@@ -1,4 +1,4 @@
-#include "ScriptPCH.h"
+
 
 extern CharacterDatabaseWorkerPool CharacterDatabase;
 
