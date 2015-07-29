@@ -1,4 +1,4 @@
-#include "ScriptPCH.h"
+
 
 enum Enchants
 {
@@ -195,7 +195,7 @@ void Enchant(Player* player, Creature* creature, Item* item, uint32 enchantid)
         case ENCHANT_WEP_MASSACRE:
             if (item->GetTemplate()->InventoryType != INVTYPE_2HWEAPON)
             {
-                creature->MonsterWhisper("That isn't a two-handed weapon", player->GetGUID());
+				creature->Whisper("That isn't a two-handed weapon", LANG_UNIVERSAL, player, true);
                 return;
             }
             break;
@@ -207,7 +207,8 @@ void Enchant(Player* player, Creature* creature, Item* item, uint32 enchantid)
         case ENCHANT_SHIELD_TITANIUM_SPIKE:
             if (item->GetTemplate()->InventoryType != INVTYPE_SHIELD)
             {
-                creature->MonsterWhisper("That isn't a shield", player->GetGUID());
+				creature->Whisper("That isn't a shield", LANG_UNIVERSAL, player, true);
+				
                 return;
             }
             break;
@@ -216,7 +217,7 @@ void Enchant(Player* player, Creature* creature, Item* item, uint32 enchantid)
             if (item->GetTemplate()->InventoryType != INVTYPE_RANGED &&
                 item->GetTemplate()->InventoryType != INVTYPE_RANGEDRIGHT)
             {
-                creature->MonsterWhisper("That isn't a ranged weapon", player->GetGUID());
+				creature->Whisper("That isn't a ranged weapon", LANG_UNIVERSAL, player, true);
                 return;
             }
             break;

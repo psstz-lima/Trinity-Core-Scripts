@@ -1,4 +1,4 @@
-#include "ScriptPCH.h"
+
 
 class player_assistant : public CreatureScript
 {
@@ -7,7 +7,7 @@ public:
 
     bool OnGossipHello(Player* pPlayer, Creature* pCreature)
     {
-        if (pPlayer->isInCombat())
+        if (pPlayer->IsInCombat())
         {
             pPlayer->GetSession()->SendNotification("You are in combat");
             return false;
@@ -36,49 +36,49 @@ public:
               {
                   pPlayer->CLOSE_GOSSIP_MENU();
                   pPlayer->CastSpell(pPlayer,24827,false);
-                  pPlayer->MonsterWhisper("Soul Shard Created.", pPlayer->GetGUID());
+				  pCreature->Whisper("Soul Shard Created.", LANG_UNIVERSAL, pPlayer, true);
               }break;
           case 2:
               {
                   pPlayer->CLOSE_GOSSIP_MENU();
                   pPlayer->CastSpell(pPlayer,42956,false);
-                  pPlayer->MonsterWhisper("Refreshments Created.", pPlayer->GetGUID());
+				  pCreature->Whisper("Refreshments Created.", LANG_UNIVERSAL, pPlayer, true);
               }break;
           case 3:
               {
                   pPlayer->CLOSE_GOSSIP_MENU();
                   pPlayer->CastSpell(pPlayer,42985,false);;
-                  pPlayer->MonsterWhisper("Mana Gem Created.", pPlayer->GetGUID());
+				  pCreature->Whisper("Mana Gem Created", LANG_UNIVERSAL, pPlayer, true);
               }break;
          case 4:
               {
                   pPlayer->CLOSE_GOSSIP_MENU();
-                  pPlayer->resetTalents(true);
-                  pCreature->MonsterWhisper("Your talents has been reset.", pPlayer->GetGUID());
+                  pPlayer->ResetTalents(true);
+				  pCreature->Whisper("Your talents has been reset.", LANG_UNIVERSAL, pPlayer, true);
               }break;
          case 5:
               {
                   pPlayer->CLOSE_GOSSIP_MENU();
-                  pPlayer->resetSpells(false);
-                  pCreature->MonsterWhisper("Your spells has been reset.", pPlayer->GetGUID());
+                  pPlayer->ResetSpells(false);
+				  pCreature->Whisper("Your spells has been reset.", LANG_UNIVERSAL, pPlayer, true);
               }break;
          case 6:
               {
                   pPlayer->CLOSE_GOSSIP_MENU();
                   pPlayer->SetHonorPoints(0);
-                  pCreature->MonsterWhisper("Your honor has been reset.", pPlayer->GetGUID());
+				  pCreature->Whisper("Your honor has been reset.", LANG_UNIVERSAL, pPlayer, true);
               }break;
          case 7:
               {
                   pPlayer->CLOSE_GOSSIP_MENU();
                   pPlayer->SetMoney(0);
-                  pCreature->MonsterWhisper("Your gold has been reset.", pPlayer->GetGUID());
+				  pCreature->Whisper("Your gold has been reset.", LANG_UNIVERSAL, pPlayer, true);
               }break;
          case 8:
               {
                   pPlayer->CLOSE_GOSSIP_MENU();
                   pCreature->CastSpell(pPlayer,38588,false);
-                  pCreature->MonsterWhisper("You have been healed.", pPlayer->GetGUID());
+				  pCreature->Whisper("You have been healed.", LANG_UNIVERSAL, pPlayer, true);
               }break;
          case 9:
               {
