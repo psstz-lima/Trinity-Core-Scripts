@@ -1,4 +1,12 @@
-#include "ScriptPCH.h"
+/*
+<--------------------------------------------------------------------------->
+- Developer(s): InfusionWoW
+- Updated By: Ghostcrawler336
+- Complete: %100
+- ScriptName: 'npc_vote'
+- Comment: N/A
+<--------------------------------------------------------------------------->
+*/
 #define TOKEN_ID 850000 // Replace 49927 to YOUR_TOKEN_ID
 
 
@@ -46,13 +54,13 @@ bool OnGossipSelect(Player* pPlayer, Creature* _creature, uint32 uiSender, uint3
                     pPlayer->CLOSE_GOSSIP_MENU();
                     pPlayer->AddItem(49343, 1);
 					pPlayer->DestroyItemCount(TOKEN_ID, 25, true);
-                    _creature->MonsterWhisper("Your Companion has been added.", pPlayer->GetGUID());
+					_creature->Whisper("Your Companion has been added.", LANG_UNIVERSAL, pPlayer, false);
 					return true;
                 }
                 else 
                 {
                     pPlayer->CLOSE_GOSSIP_MENU();
-                    _creature->MonsterWhisper("You dont have enough Vote Tokens.", pPlayer->GetGUID());
+					_creature->Whisper("You dont have enough Vote Tokens.", LANG_UNIVERSAL, pPlayer, false);
                     return false;
                 }
                 break;
@@ -65,13 +73,13 @@ bool OnGossipSelect(Player* pPlayer, Creature* _creature, uint32 uiSender, uint3
                     pPlayer->CLOSE_GOSSIP_MENU();
                      pPlayer->AddItem(49663, 1);
 					pPlayer->DestroyItemCount(TOKEN_ID, 25, true);
-                    _creature->MonsterWhisper("Your Companion has been added.", pPlayer->GetGUID());
+					_creature->Whisper("Your Companion has been added.", LANG_UNIVERSAL, pPlayer, false);
 					return true;
                 }
                 else 
                 {
                     pPlayer->CLOSE_GOSSIP_MENU();
-                    _creature->MonsterWhisper("You dont have enough Vote Tokens.", pPlayer->GetGUID());
+					_creature->Whisper("You don't have enough Vote Tokens.", LANG_UNIVERSAL, pPlayer, false);
                     return false;
                 }
                 break;
@@ -83,13 +91,13 @@ bool OnGossipSelect(Player* pPlayer, Creature* _creature, uint32 uiSender, uint3
                     pPlayer->CLOSE_GOSSIP_MENU();
                     pPlayer->AddItem(56806, 1);
 					pPlayer->DestroyItemCount(TOKEN_ID, 25, true);
-                    _creature->MonsterWhisper("Your Companion has been added.", pPlayer->GetGUID());
+					_creature->Whisper("Your Companion has been added.", LANG_UNIVERSAL, pPlayer, false);
 					return true;
                 }
                 else 
                 {
                     pPlayer->CLOSE_GOSSIP_MENU();
-                    _creature->MonsterWhisper("You dont have enough Vote Tokens.", pPlayer->GetGUID());
+					_creature->Whisper("You don't have enough Vote Tokens.", LANG_UNIVERSAL, pPlayer, false);
                     return false;
                 }
                 break;
@@ -101,13 +109,13 @@ bool OnGossipSelect(Player* pPlayer, Creature* _creature, uint32 uiSender, uint3
                     pPlayer->CLOSE_GOSSIP_MENU();
                     pPlayer->AddItem(49662, 1);
 					pPlayer->DestroyItemCount(TOKEN_ID, 25, true);
-                    _creature->MonsterWhisper("Your Companion has been added.", pPlayer->GetGUID());
+					_creature->Whisper("Your Companion has been added.", LANG_UNIVERSAL, pPlayer, false);
 					return true;
                 }
                 else 
                 {
                     pPlayer->CLOSE_GOSSIP_MENU();
-                    _creature->MonsterWhisper("You dont have enough Vote Tokens.", pPlayer->GetGUID());
+					_creature->Whisper("You don't have enough Vote Tokens.", LANG_UNIVERSAL, pPlayer, false);
                     return false;
                 }
                 break;
@@ -121,13 +129,13 @@ bool OnGossipSelect(Player* pPlayer, Creature* _creature, uint32 uiSender, uint3
                     pPlayer->CLOSE_GOSSIP_MENU();
                     pPlayer->AddItem(13584, 1);
 					pPlayer->DestroyItemCount(TOKEN_ID, 25, true);
-                    _creature->MonsterWhisper("Your Companion has been added.", pPlayer->GetGUID());
+					_creature->Whisper("Your Companion has been added.", LANG_UNIVERSAL, pPlayer, false);
 					return true;
                 }
                 else 
                 {
                     pPlayer->CLOSE_GOSSIP_MENU();
-                    _creature->MonsterWhisper("You dont have enough Vote Tokens.", pPlayer->GetGUID());
+					_creature->Whisper("You don't have enough Vote Tokens.", LANG_UNIVERSAL, pPlayer, false);
                     return false;
                 }
                 break;
@@ -143,13 +151,13 @@ bool OnGossipSelect(Player* pPlayer, Creature* _creature, uint32 uiSender, uint3
                     pPlayer->CLOSE_GOSSIP_MENU();
                     pPlayer->AddItem(49362, 1);
 					pPlayer->DestroyItemCount(TOKEN_ID, 25, true);
-                    _creature->MonsterWhisper("Your Companion has been added.", pPlayer->GetGUID());
+					_creature->Whisper("Your Companion has been added..", LANG_UNIVERSAL, pPlayer, false);
 					return true;
                 }
                 else 
                 {
                     pPlayer->CLOSE_GOSSIP_MENU();
-                    _creature->MonsterWhisper("You dont have enough Vote Tokens.", pPlayer->GetGUID());
+					_creature->Whisper("You don't have enough Vote Tokens.", LANG_UNIVERSAL, pPlayer, false);
                     return false;
                 }
                 break;
@@ -162,13 +170,13 @@ bool OnGossipSelect(Player* pPlayer, Creature* _creature, uint32 uiSender, uint3
                     pPlayer->CLOSE_GOSSIP_MENU();
                     pPlayer->AddItem(49646, 1);
 					pPlayer->DestroyItemCount(TOKEN_ID, 25, true);
-                    _creature->MonsterWhisper("Your Companion has been added.", pPlayer->GetGUID());
+					_creature->Whisper("Your Companion has been added..", LANG_UNIVERSAL, pPlayer, false);
 					return true;
                 }
                 else 
                 {
                     pPlayer->CLOSE_GOSSIP_MENU();
-                    _creature->MonsterWhisper("You dont have enough Vote Tokens.", pPlayer->GetGUID());
+					_creature->Whisper("You don't have enough Vote Tokens.", LANG_UNIVERSAL, pPlayer, false);
                     return false;
                 }
                 break;
@@ -183,13 +191,13 @@ bool OnGossipSelect(Player* pPlayer, Creature* _creature, uint32 uiSender, uint3
                     pPlayer->CLOSE_GOSSIP_MENU();
                     pPlayer->AddItem(41133, 1);
 					pPlayer->DestroyItemCount(TOKEN_ID, 25, true);
-                    _creature->MonsterWhisper("Your Companion has been added.", pPlayer->GetGUID());
+					_creature->Whisper("Your Companion has been added..", LANG_UNIVERSAL, pPlayer, false);
 					return true;
                 }
                 else 
                 {
                     pPlayer->CLOSE_GOSSIP_MENU();
-                    _creature->MonsterWhisper("You dont have enough Vote Tokens.", pPlayer->GetGUID());
+					_creature->Whisper("You don't have enough Vote Tokens.", LANG_UNIVERSAL, pPlayer, false);
                     return false;
                 }
                 break;
@@ -203,13 +211,13 @@ bool OnGossipSelect(Player* pPlayer, Creature* _creature, uint32 uiSender, uint3
                     pPlayer->CLOSE_GOSSIP_MENU();
                     pPlayer->AddItem(46545, 1);
 					pPlayer->DestroyItemCount(TOKEN_ID, 25, true);
-                    _creature->MonsterWhisper("Your Companion has been added.", pPlayer->GetGUID());
+					_creature->Whisper("Your Companion has been added..", LANG_UNIVERSAL, pPlayer, false);
 					return true;
                 }
                 else 
                 {
                     pPlayer->CLOSE_GOSSIP_MENU();
-                    _creature->MonsterWhisper("You dont have enough Vote Tokens.", pPlayer->GetGUID());
+					_creature->Whisper("You don't have enough Vote Tokens.", LANG_UNIVERSAL, pPlayer, false);
                     return false;
                 }
                 break;
@@ -223,13 +231,13 @@ bool OnGossipSelect(Player* pPlayer, Creature* _creature, uint32 uiSender, uint3
                     pPlayer->CLOSE_GOSSIP_MENU();
                     pPlayer->AddItem(35504, 1);
 					pPlayer->DestroyItemCount(TOKEN_ID, 25, true);
-                    _creature->MonsterWhisper("Your Companion has been added.", pPlayer->GetGUID());
+					_creature->Whisper("Your Companion has been added..", LANG_UNIVERSAL, pPlayer, false);
 					return true;
                 }
                 else 
                 {
                     pPlayer->CLOSE_GOSSIP_MENU();
-                    _creature->MonsterWhisper("You dont have enough Vote Tokens.", pPlayer->GetGUID());
+					_creature->Whisper("You don't have enough Vote Tokens.", LANG_UNIVERSAL, pPlayer, false);
                     return false;
                 }
                 break;
@@ -243,13 +251,13 @@ bool OnGossipSelect(Player* pPlayer, Creature* _creature, uint32 uiSender, uint3
                     pPlayer->CLOSE_GOSSIP_MENU();
                     pPlayer->AddItem(23713, 1);
 					pPlayer->DestroyItemCount(TOKEN_ID, 25, true);
-                    _creature->MonsterWhisper("Your Companion has been added.", pPlayer->GetGUID());
+					_creature->Whisper("Your Companion has been added..", LANG_UNIVERSAL, pPlayer, false);
 					return true;
                 }
                 else 
                 {
                     pPlayer->CLOSE_GOSSIP_MENU();
-                    _creature->MonsterWhisper("You dont have enough Vote Tokens.", pPlayer->GetGUID());
+					_creature->Whisper("You don't have enough Vote Points.", LANG_UNIVERSAL, pPlayer, false);
                     return false;
                 }
                 break;
