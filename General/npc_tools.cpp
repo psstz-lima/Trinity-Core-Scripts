@@ -1,4 +1,12 @@
-#include "ScriptPCH.h"
+/*
+<--------------------------------------------------------------------------->
+- Developer(s): InfusionWoW
+- Updated By: Ghostcrawler336
+- Complete: %0
+- ScriptName: 'npc_tools'
+- Comment: N/A
+<--------------------------------------------------------------------------->
+*/
 
 enum defines
 {

@@ -1,5 +1,12 @@
-#include "ScriptPCH.h"
-
+/*
+<--------------------------------------------------------------------------->
+- Developer(s): InfusionWoW
+- Updated By: Ghostcrawler336
+- Complete: %100
+- ScriptName: 'npc_title'
+- Comment: N/A
+<--------------------------------------------------------------------------->
+*/
 enum Actions
 {
 	// alliance

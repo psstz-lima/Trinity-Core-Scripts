@@ -1,5 +1,12 @@
-#include "ScriptPCH.h"
-#include "Chat.h"
+/*
+<--------------------------------------------------------------------------->
+- Developer(s): InfusionWoW
+- Updated By: Ghostcrawler336
+- Complete: %100
+- ScriptName: 'npc_teleporter'
+- Comment: N/A
+<--------------------------------------------------------------------------->
+*/
 
 const int PLAYER_QUEUE = 4;
 static const Position playerSpawnPoint[PLAYER_QUEUE] = 
@@ -17,7 +24,7 @@ public:
 
     bool OnGossipHello(Player* pPlayer, Creature* pCreature)
     {
-        if (pPlayer->isInCombat())
+        if (pPlayer->IsInCombat())
         {
             pPlayer->GetSession()->SendNotification("You are in combat");
             return false;
